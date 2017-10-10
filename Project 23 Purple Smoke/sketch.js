@@ -3,12 +3,8 @@ var bubbles = [];
 function setup(){
   createCanvas(600,400);
   setInterval(function(){
-      for(var i=100;i>0;i--){
-        bubbles.push(new Bubble(500,380,12));
-        bubbles.push(new Bubble(400,380,12));
-        bubbles.push(new Bubble(300,380,12));
-        bubbles.push(new Bubble(200,380,12));
-        bubbles.push(new Bubble(100,380,12));
+      for(var i=500;i>0;i--){
+        bubbles.push(new Bubble(random(600),380,random(8,16)));
       }
   },1000);
 }
